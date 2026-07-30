@@ -1,0 +1,197 @@
+/* ===========================
+   Featured Government Schemes
+=========================== */
+
+.popular-schemes {
+  padding: 40px 0 80px;
+  background: #f8fafc;
+}
+
+
+/* ===========================
+   Section Header
+=========================== */
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.view-all:hover {
+  gap: 12px;
+}
+
+.view-all svg {
+  font-size: 18px;
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* ===========================
+   Scheme Card
+=========================== */
+
+.scheme-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 26px;
+
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.3s ease;
+}
+
+.scheme-card:hover {
+  transform: translateY(-10px);
+    border-color:#2563eb;
+    box-shadow:0 20px 45px rgba(37,99,235,.12);
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.scheme-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.scheme-content {
+  flex: 1;
+}
+
+.scheme-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.scheme-content p {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.card-footer {
+  margin-top: 20px;
+  padding-top: 18px;
+
+  border-top: 1px solid #eef2f7;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  transition:.3s;
+}
+
+.card-footer:hover {
+  letter-spacing:.3px;
+  color: #1d4ed8;
+}
+
+/* ===========================
+   Arrow Animation
+=========================== */
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.card-footer:hover .arrow {
+  transform: translateX(8px);
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 1024px) {
+  .schemes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+  .popular-schemes {
+    padding: 60px 0;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .schemes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scheme-card {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,119 @@
+/* ===========================
+   Trust Bar
+=========================== */
+
+.trust-bar {
+  padding: 0 0 40px;
+}
+
+.trust-grid {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 24px 28px;
+
+  position: relative;
+
+  transition: all 0.3s ease;
+}
+
+.trust-item:hover {
+  background: #f8fafc;
+}
+
+.trust-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 25%;
+  right: 0;
+
+  width: 1px;
+  height: 50%;
+
+  background: #e5e7eb;
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.trust-icon {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+
+  flex-shrink: 0;
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.trust-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+
+  margin-bottom: 6px;
+}
+
+.trust-content p {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-item:nth-child(2)::after {
+    display: none;
+  }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item::after {
+    display: none;
+  }
+
+}

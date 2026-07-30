@@ -1,0 +1,199 @@
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero {
+  padding: 80px 0 40px;
+  background: #F8FAFC;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* ===========================
+   Left Content
+=========================== */
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-badge {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  background: #DBEAFE;
+  color: #1E3A8A;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15;
+
+  color: #111827;
+
+  margin-bottom: 24px;
+}
+
+.hero p {
+  color: #6B7280;
+
+  font-size: 19px;
+  line-height: 1.8;
+
+  max-width: 600px;
+
+  margin-bottom: 40px;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.primary-btn {
+  padding: 16px 36px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #1E3A8A;
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #163172;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  padding: 16px 36px;
+
+  background: white;
+
+  border: 2px solid #1E3A8A;
+
+  color: #1E3A8A;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #F3F8FF;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Right Side
+=========================== */
+
+.hero-right {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero-placeholder {
+  width: 480px;
+  height: 390px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  border: 1px solid #E5E7EB;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #94A3B8;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero p {
+    margin: 0 auto 40px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-placeholder {
+    width: 100%;
+    max-width: 420px;
+    height: 320px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 60px 0 30px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+}

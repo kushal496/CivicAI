@@ -1,0 +1,194 @@
+/* ===========================
+   How It Works
+=========================== */
+
+.how-it-works {
+  padding: 90px 0;
+  background: #F8FAFC;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.journey-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 70px;
+}
+
+.journey-header span {
+  display: inline-block;
+  padding: 8px 18px;
+
+  background: #DBEAFE;
+  color: #1E3A8A;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 18px;
+}
+
+.journey-header h2 {
+  font-size: 42px;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.journey-header p {
+  font-size: 18px;
+  color: #6B7280;
+  line-height: 1.7;
+}
+
+/* ===========================
+   Journey Layout
+=========================== */
+
+.journey {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  position: relative;
+
+  gap: 8px;
+}
+
+/* Dashed Line */
+
+.journey::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 38px;
+  left: 10%;
+  right: 10%;
+
+  border-top: 2px dashed #CBD5E1;
+
+  z-index: 0;
+}
+
+/* ===========================
+   Step
+=========================== */
+
+.journey-step {
+
+  flex: 1;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.journey-icon {
+
+  width: 84px;
+  height: 84px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 34px;
+
+  transition: all .3s ease;
+
+  border: 5px solid #F8FAFC;
+}
+
+.journey-step:hover .journey-icon {
+
+  transform: translateY(-6px) scale(1.05);
+
+  box-shadow: 0 12px 30px rgba(15,23,42,.12);
+}
+
+.journey-step h3 {
+
+  font-size: 22px;
+
+  color: #111827;
+
+  margin-bottom: 12px;
+}
+
+.journey-step p {
+
+  max-width: 220px;
+
+  margin: auto;
+
+  color: #64748B;
+
+  line-height: 1.7;
+
+  font-size: 16px;
+}
+
+/* Hide JSX connector */
+
+.journey-line{
+    display:none;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:992px){
+
+  .journey{
+
+      display:grid;
+
+      grid-template-columns:repeat(2,1fr);
+
+      gap:50px;
+  }
+
+  .journey::before{
+      display:none;
+  }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+  .how-it-works{
+      padding:70px 0;
+  }
+
+  .journey-header h2{
+      font-size:34px;
+  }
+
+  .journey{
+
+      grid-template-columns:1fr;
+
+      gap:40px;
+  }
+
+  .journey-step p{
+      max-width:300px;
+  }
+
+}
