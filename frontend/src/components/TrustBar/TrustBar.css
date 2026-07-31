@@ -3,7 +3,7 @@
 =========================== */
 
 .trust-bar {
-  padding: 0 0 40px;
+  padding: 0 0 28px;
 }
 
 .trust-grid {
@@ -24,7 +24,7 @@
   align-items: center;
   gap: 18px;
 
-  padding: 24px 28px;
+  padding: 18px 24px;
 
   position: relative;
 
@@ -54,8 +54,8 @@
 =========================== */
 
 .trust-icon {
-  width: 58px;
-  height: 58px;
+  width: 52px;
+  height: 52px;
 
   border-radius: 16px;
 
@@ -63,7 +63,7 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 24px;
+  font-size: 22px;
 
   flex-shrink: 0;
 }
@@ -73,7 +73,7 @@
 =========================== */
 
 .trust-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #0f172a;
 

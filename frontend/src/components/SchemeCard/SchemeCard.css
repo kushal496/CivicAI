@@ -1,0 +1,101 @@
+.scheme-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    padding:20px 22px;
+    min-height:240px;
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.3s;
+}
+
+.scheme-card:hover{
+    transform:translateY(-8px);
+    border-color:#2563eb;
+    box-shadow:0 18px 40px rgba(37,99,235,.12);
+}
+
+.scheme-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+}
+
+.scheme-icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    background:#eaf8ef;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#16a34a;
+    font-size:28px;
+}
+
+.match-badge{
+    background:#ecfdf5;
+    color:#16a34a;
+
+    padding:6px 12px;
+    border-radius:30px;
+
+    font-size:13px;
+    font-weight:600;
+}
+
+.scheme-card h3{
+    font-size:22px;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.category{
+    color:#64748b;
+    margin-bottom:18px;
+}
+
+.benefit{
+    color:#374151;
+    line-height:1.6;
+    flex:1;
+}
+
+.scheme-footer{
+    margin-top:25px;
+}
+
+.scheme-footer button{
+
+    width:100%;
+
+    border:none;
+
+    background:#2563eb;
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.scheme-footer button:hover{
+    background:#1d4ed8;
+}

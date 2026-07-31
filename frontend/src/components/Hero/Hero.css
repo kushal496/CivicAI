@@ -3,7 +3,7 @@
 =========================== */
 
 .hero {
-  padding: 80px 0 40px;
+  padding: 60px 0 25px;
   background: #F8FAFC;
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 40px;
 }
 
 /* ===========================
@@ -20,6 +20,7 @@
 
 .hero-left {
   flex: 1;
+ 
 }
 
 .hero-badge {
@@ -33,7 +34,7 @@
   border-radius: 999px;
 
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 620;
 
   margin-bottom: 24px;
 }
@@ -43,7 +44,8 @@
   line-height: 1.15;
 
   color: #111827;
-
+   max-width:590px;
+  
   margin-bottom: 24px;
 }
 
@@ -55,7 +57,7 @@
 
   max-width: 600px;
 
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 /* ===========================
@@ -126,7 +128,7 @@
 
 .hero-placeholder {
   width: 480px;
-  height: 390px;
+  height: 380px;
 
   background: white;
 

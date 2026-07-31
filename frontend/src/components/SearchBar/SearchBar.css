@@ -1,0 +1,49 @@
+.search-section{
+
+    margin:40px 0 30px;
+}
+
+.search-box{
+
+    display:flex;
+    align-items:center;
+
+    background:white;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    padding:18px 22px;
+
+    box-shadow:0 8px 25px rgba(15,23,42,.05);
+}
+
+.search-icon{
+
+    font-size:24px;
+
+    color:#64748B;
+
+    margin-right:15px;
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    font-size:17px;
+
+    color:#0F172A;
+
+    background:transparent;
+}
+
+.search-box input::placeholder{
+
+    color:#94A3B8;
+}
