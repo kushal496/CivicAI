@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Schemes.css";
 
 import { schemes } from "../../data/schemes";
@@ -10,6 +11,30 @@ import Pagination from "../../components/Pagination/Pagination";
 import schemeBanner from "../../assets/images/scheme-banner.png";
 
 function Schemes() {
+  /* ===========================
+      State
+  =========================== */
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All Categories");
+  /* ===========================
+      Search Logic
+  =========================== */
+  const filteredSchemes = schemes.filter((scheme) => {
+
+  const matchesSearch =
+    scheme.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    scheme.category.toLowerCase().includes(searchTerm.toLowerCase());
+
+  const matchesCategory =
+    selectedCategory === "All Categories" ||
+    scheme.category === selectedCategory;
+
+  return matchesSearch && matchesCategory;
+
+});
+/* ===========================
+      Render
+  =========================== */
   return (
     <>
       <Navbar />
@@ -42,13 +67,19 @@ function Schemes() {
 
         </div>
 
-        <SearchBar />
+        <SearchBar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+         />
 
-        <FilterChips />
+        <FilterChips 
+         selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+        />
 
         <div className="schemes-grid">
 
-          {schemes.map((scheme) => (
+          {filteredSchemes.map((scheme) => (
     <SchemeCard
       key={scheme.id}
       scheme={scheme}

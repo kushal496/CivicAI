@@ -31,17 +31,16 @@
 }
 
 .filter-chips button:hover{
-
     border-color:#2563EB;
-
     color:#2563EB;
+    transform:translateY(-2px);
 }
 
 .filter-chips .active{
 
     background:#2563EB;
-
     color:white;
+    border-color:#2563EB;
 
-    border:none;
+    box-shadow:0 10px 25px rgba(37,99,235,.15);
 }

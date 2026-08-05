@@ -1,22 +1,38 @@
 import "./FilterChips.css";
 
-function FilterChips() {
+const categories = [
+  "All Categories",
+  "Agriculture",
+  "Education",
+  "Healthcare",
+  "Housing",
+  "Employment",
+  "Women & Child",
+  "Finance",
+];
+
+function FilterChips({
+  selectedCategory,
+  setSelectedCategory,
+}) {
   return (
     <div className="filter-chips">
 
-      <button className="active">All Categories</button>
+      {categories.map((category) => (
 
-      <button>Agriculture</button>
+        <button
+          key={category}
+          className={
+            selectedCategory === category
+              ? "active"
+              : ""
+          }
+          onClick={() => setSelectedCategory(category)}
+        >
+          {category}
+        </button>
 
-      <button>Education</button>
-
-      <button>Healthcare</button>
-
-      <button>Housing</button>
-
-      <button>Employment</button>
-
-      <button>Women & Child</button>
+      ))}
 
     </div>
   );
