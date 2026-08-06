@@ -1,0 +1,144 @@
+/* ===========================
+   Hero Layout
+=========================== */
+
+.scheme-hero{
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    display:grid;
+
+    grid-template-columns:300px 1fr 280px;
+
+    gap:35px;
+
+    align-items:center;
+
+    box-shadow:0 15px 40px rgba(15,23,42,.06);
+
+    margin-bottom:30px;
+}
+
+/* ===========================
+   Image
+=========================== */
+
+.hero-image{
+
+    height:320px;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.hero-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    padding:10px;
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.scheme-tag{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    background:#DBEAFE;
+
+    color:#1D4ED8;
+
+    font-size:14px;
+    font-weight:600;
+
+    margin-bottom:18px;
+}
+
+.hero-content h1{
+
+    font-size:46px;
+
+    color:#0F172A;
+
+    margin-bottom:18px;
+}
+
+.hero-content p{
+
+    max-width:650px;
+
+    color:#64748B;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+}
+
+/* ===========================
+   Info Cards
+=========================== */
+
+.hero-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+}
+
+.info-card{
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    padding:18px;
+}
+
+.info-card h4{
+
+    font-size:14px;
+
+    color:#64748B;
+
+    margin-bottom:8px;
+}
+
+.info-card p{
+
+    margin:0;
+
+    color:#0F172A;
+
+    font-size:15px;
+
+    font-weight:600;
+}

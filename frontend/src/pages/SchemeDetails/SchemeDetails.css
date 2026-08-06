@@ -1,0 +1,43 @@
+.scheme-details-page{
+    background:#F8FAFC;
+    min-height:100vh;
+    padding:40px 0 80px;
+}
+
+.details-container{
+    width:94%;
+    max-width:1500px;
+    margin:auto;
+}
+
+.details-hero{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    margin-bottom:25px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+}
+
+.details-tabs{
+    background:white;
+    border-radius:16px;
+    padding:18px 25px;
+    margin-bottom:25px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+}
+
+.details-content{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:28px;
+}
+
+.left-content,
+.right-content{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}

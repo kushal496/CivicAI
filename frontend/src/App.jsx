@@ -1,7 +1,7 @@
-import Schemes from "./pages/Schemes/Schemes";
+import SchemeDetails from "./pages/SchemeDetails/SchemeDetails";
 
 function App() {
-  return <Schemes />;
+  return <SchemeDetails />;
 }
 
 export default App;
